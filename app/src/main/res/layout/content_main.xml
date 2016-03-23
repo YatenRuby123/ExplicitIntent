@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ActivityA"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Method 1"
+        android:id="@+id/bmethod1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:onClick="gotoActivity"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Method 2"
+        android:id="@+id/bmethod2"
+        android:layout_below="@+id/bmethod1"
+        android:layout_alignRight="@+id/bmethod1"
+        android:layout_alignEnd="@+id/bmethod1"
+        android:layout_marginTop="63dp"
+        android:onClick="gotoActivity"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Method 3"
+        android:id="@+id/bmethod3"
+        android:onClick="gotoActivity"
+        android:layout_below="@+id/bmethod2"
+        android:layout_alignLeft="@+id/bmethod2"
+        android:layout_alignStart="@+id/bmethod2"
+        android:layout_marginTop="91dp" />
+</RelativeLayout>
